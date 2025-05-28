@@ -1,0 +1,1175 @@
+/* -------------------- Global Styles -------------------- */
+@font-face {
+    src: url(fonts/NotoSans-Regular.ttf);
+    font-family: 'NotoSans';
+}
+@font-face {
+    src: url(fonts/NotoSans-SemiBold.ttf);
+    font-family: 'NotoSemiBold';
+}
+@font-face {
+    src: url(fonts/NotoSans-Thin.ttf);
+    font-family: 'NotoSemiThin';
+}
+
+body {
+    font-family: 'NotoSans', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 75px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.container h1{
+    text-align: center;
+}
+
+.container img{
+   display: block;
+   margin: auto;
+   justify-content: center;
+}
+
+/* -------------------- Content Section -------------------- */
+
+.content {
+    text-align: center;
+}
+
+
+.content p {
+    text-align: center;
+}
+
+.content .menu-items img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+.content h1{
+    text-align: center;
+    color: #e51636;
+    font-size: 30px;
+}
+
+.content h2 {
+    text-align: center;
+    color: #e51636;
+    font-size: 25px;
+}
+.content h3 {
+    text-align: center;
+    color: #e51636;
+    font-size: 20px;
+}
+
+/* -------------------- Header Section -------------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 5px solid #c4142e;
+}
+
+.header img {
+    width: 100px;
+    height: 75px;
+    max-width: 100px;
+    max-height: 75px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.header h1 {
+    color: #e51636;
+}
+
+.header .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header .sign-in button,
+.header .sign-up button {
+    width: auto;
+    padding: 12px 17px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'NotoSemiBold', sans-serif;
+    transition-duration: 0.2s;
+}
+
+.header .sign-in button {
+    background-image: linear-gradient(45deg, #ed0505, #c4142e);
+    color: #fff;
+    border: none;
+}
+
+.header .sign-in button:hover {
+    background-image: linear-gradient(45deg, #a10c23, #9c1a2e);
+}
+
+.header .sign-up button {
+    background-color: #fff;
+    color: #e51635;
+    border: 2px solid #e51635;
+}
+
+.header .sign-up button:hover {
+    box-shadow: inset 0 0 0 0.75px #e51635;
+}
+
+.header .nav-bar {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.header .nav-bar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header .nav-bar li {
+    margin: 0 15px;
+}
+
+.header .nav-bar a {
+    color: #e51635;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-bar a:hover {
+    color: #ac1d1d;
+}
+
+
+.header .cart button {
+    background-color: #e51636;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'NotoSemiBold', sans-serif;
+    transition: background-color 0.2s;
+}
+
+.header .cart button:hover {
+    background-color: #c4142e;
+}
+
+/* -------------------- Sign-In/Sign-Up Section -------------------- */
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e51636;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.form-group button:hover {
+    background-color: #c4142e;
+}
+
+.form-group .error {
+    color: #e51636;
+    font-size: 14px;
+    margin-top: 5px;
+}
+  
+  /* -------------------- Footer Styles -------------------- */
+  .footer {
+    background-color: #f1f1f1;
+    color: #8b8b8b;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    bottom: 0;
+}
+  
+  .footer a {
+    color: #e51636;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.2s;
+}
+  
+  .footer a:hover {
+    color: #ac1d1d;
+}
+  
+  /* -------------------- Extra Components -------------------- */
+  
+  /* For the image and sign in/up inside the container */
+  .signh {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* -------------------- Menu Items -------------------- */
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.05s;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.01);
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+
+  .menu-item h2 {
+    text-align: center;
+    color: #e51636;
+    font-size: 25px;
+}
+
+.menu-item p {
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+}
+
+.menu-item p {
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.menu-item p strong {
+    color: #e51636;
+}
+
+.menu-item button{
+    background-color: #e51636;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'NotoSemiBold', sans-serif;
+    transition: background-color 0.2s;
+}
+
+.menu-item button:hover {
+    background-color: #c4142e;
+}
+
+
+  /* -------------------- Cart Section -------------------- */
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 16px;
+  text-align: center;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cart-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.cart-table td {
+  padding: 15px;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.cart-table td:first-child {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.cart-table td:last-child {
+  font-weight: bold;
+  color: #e51636;
+}
+
+  /* -------------------- Cart Buttons -------------------- */
+  .cart-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.cart-actions button {
+  background-color: #e51636;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'NotoSemiBold', sans-serif;
+  transition: background-color 0.2s;
+}
+
+.cart-actions button:hover {
+  background-color: #c4142e;
+}
+
+.cart-actions .clear-cart {
+  background-color: #fff;
+  color: #e51636;
+  border: 2px solid #e51636;
+}
+
+.cart-actions .clear-cart:hover {
+  background-color: #e51636;
+  color: #fff;
+}
+
+  
+  /* -------------------- Find a Location -------------------- */
+  .find-cfa button {
+    width: auto;
+    padding: 12px 10px;
+    background: none;
+    color: #e51635;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-family: 'NotoSans', sans-serif;
+  }
+  
+  .find-cfa button:hover {
+    color: #ac1d1d;
+  }
+  
+  .map-container {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+  }
+  
+  /* -------------------- Order Now -------------------- */
+  .order-container {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    width: 300px;
+    height: 600px;
+    background-image: linear-gradient(10deg, #ffffff, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .order-type {
+    width: 100px;
+    height: 30px;
+    background-color: #fff;
+    color: #e51635;
+    border: none;
+    cursor: pointer;
+    font-family: 'NotoSemiBold', sans-serif;
+  }
+  
+  .order-type.active {
+    height: 30px;
+    background-image: linear-gradient(45deg, #ed0505, #c4142e);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'NotoSemiBold', sans-serif;
+  }
+  
+  .order-type:hover {
+    color: #ac1d1d;
+  }
+  
+  .address-search {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .address-search input {
+    flex-grow: 1;
+    padding: 1px 10px;
+    border: 2px solid #e51635;
+    border-radius: 20px;
+    font-size: 12px;
+    outline: none;
+    font-family: 'NotoSans', sans-serif;
+    transition: border-color 0.3s;
+  }
+  
+  .address-search input:focus {
+    border-color: #c4142e;
+  }
+  
+  .address-search button {
+    width: 50px;
+    height: 30px;
+    background: none;
+    color: #e51635;
+    border: none;
+    cursor: pointer;
+    font-family: 'NotoSemiBold', sans-serif;
+  }
+  
+  .address-search button:hover {
+    color: #ac1d1d;
+  }
+  
+  .restaurant-info {
+    margin-top: 20px;
+    padding: 10px;
+    width: 90%;
+    background-color: #fdf2f2;
+    border: 1px solid #e51635;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'NotoSans', sans-serif;
+    align-self: center;
+  }
+  
+  .restaurant-info h2 {
+    color: #e51635;
+    margin: 1px;
+    font-size: 18px;
+  }
+  
+  .restaurant-info p {
+    margin: 1px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .restaurant-info p2 {
+    margin: 1px;
+    font-size: 14px;
+    color: #e51635;
+  }
+  
+  .restaurant-info:hover, 
+  .viewmenu:hover {
+    background-color: #f1c9c9;
+    box-shadow: inset 0 0 0 0.75px #e51635;
+  }
+  
+  
+  /* -------------------- About Us -------------------- */
+  
+  .about-section {
+    background-color: #e51635; 
+    padding: 50px 0; 
+  }
+
+  .about-container{
+    text-align: center;
+    background-color: #f8f8f8;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-container h1, .values-section h1 {
+    color: #e51636;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: 'NotoSemiBold', sans-serif;
+  }
+
+  .about-container p {
+    font-size: 23px;
+    line-height: 1.6;
+    color: #000000;
+    margin-bottom: 20px;
+    padding: 0 20px;  
+    font-family: 'NotoSans', sans-serif;
+    font-style: italic;
+  }
+
+  .values-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 0; 
+  }
+
+  .values-container {
+    text-align: center;
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+  }
+  
+  .values-container:hover {
+    transform: scale(1.05);
+  }
+
+  .values-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .values-item img {
+    width: 50%;
+    padding: 10px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .values-text {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .values-text h2 {
+    font-size: 30px;
+    color: #e51636;
+    font-family: 'NotoSemiBold';
+  }
+
+  .values-text p {
+    font-size: 20px;
+    font-family: 'NotoSans';
+    font-style: italic;
+  }
+
+  @media (max-width: 768px) {
+    .about-container, .values-container {
+      padding: 20px;
+    }
+
+    .about-container h1 {
+      font-size: 30px;
+    }
+
+    .about-container p {
+      font-size: 16px;
+    }
+  }
+
+
+    /* -------------------- Home Hero -------------------- */
+
+    .hero {
+      position: relative;
+      background-color: #e51636;
+      color: #fff;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+  }
+  
+    .hero-text {
+      max-width: 50%;
+      font-family: 'NotoSemiBold';
+      padding: 80px 50px;
+      font-size: 30px;
+    }
+  
+    .hero-subtext {
+      font-family: 'NotoSemiThin';
+      font-size: 30px;
+    }
+  
+    .hero img {
+      max-width: 40%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+  
+    .viewmenu {
+      display: inline-block;
+      padding: 5px 15px;
+      background-color: #fff;
+      color: #e51635;
+      border: 2px solid #c4142e;
+      border-radius: 30px;
+      font-family: 'NotoSemiBold', sans-serif;
+      font-size: 30px;
+      transition: all 0.2s ease;
+    }
+    
+
+  /* -------------------- Home Promo Section -------------------- */
+  .promo-section {
+    background-color: #faf1e4;
+    padding: 100px;
+  }
+  
+  .promo-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 0 auto;
+  }
+
+  .promo-image img {
+    width: 600px;
+  }
+  
+  .promo-text {
+    max-width: 700px;
+    font-family: 'NotoSans';
+  }
+  
+  .promo-text h2 {
+    font-family: 'NotoSemiBold';
+    color: #e51636;
+    font-size: 50px;
+  }
+  
+  .promo-text p {
+    font-family: 'NotoSemiThin';
+    font-size: 30px;
+    color: #333;
+  }
+  
+  .order-now {
+    background-color: #e51636;
+    color: #fff;
+    padding: 12px 20px;
+    font-family: 'NotoSemiBold';
+    font-size: 1em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .order-now:hover {
+    background-color: #c9142f;
+  }
+  
+
+  /* -------------------- Home Fan Favorites -------------------- */  
+
+  .featured {
+    text-align: center;
+    background-color: #faf1e4;
+    padding: 50px;
+}
+
+.featured-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px;                    
+    transition: transform 0.3s ease;
+    width: 320px;  
+  }
+
+.featured-card img {
+    width: 320px;  
+  }
+
+  .featured-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px auto;
+  }
+
+  .featured-card {
+    transition: transform 0.3s ease;
+  }
+
+  .featured-card:hover {
+    transform: scale(1.10);
+  }
+
+  .featured p {
+    font-family: 'NotoSans';
+    font-size: 30px;
+    color: #e51636;
+  }
+  
+  .featured h2 {
+    color: #e51636;
+    font-family: 'NotoSemiBold';
+    font-size: 50px;
+}
+
+.featured h3 {
+    font-family: 'NotoSemiThin';
+    font-size: 30px;
+    color: #333;
+}
+
+
+/* -------------------- Staff Section -------------------- */
+
+
+.staff-section {
+  background-color: #faf1e4;
+  padding: 50px 20px;
+  font-family: 'NotoSans', sans-serif;
+}
+
+.staff-section h1, .staff-section h2, .staff-section p {
+  text-align: center;
+}
+
+.staff-section h1 {
+  color: #e51636;
+  font-size: 50px;
+  font-family: 'NotoSemiBold';
+}
+
+.staff-section h2 {
+  color: #e51636;
+  font-size: 30px;
+}
+
+.staff-section p {
+  font-size: 20px;
+  color: #010000;
+}
+
+.staff-section button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #e51636;
+  color: #fff;
+  font-family: 'NotoSemiBold', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 16px;
+}
+
+.staff-section button:hover {
+  background-color: #c4142e;
+}
+
+.empty-orders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.staff-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.staff-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.staff-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.staff-card h2 {
+  color: #c4142e;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.staff-card p {
+  text-align: center;
+  color: #010000;
+  font-size: 14px;
+}
+
+/* Staff Card Buttons */
+.staff-card button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #e51636;
+  color: #fff;
+  font-family: 'NotoSemiBold', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 16px;
+}
+
+.staff-card button:hover {
+  background-color: #c4142e;
+}
+
+.staff-card strong {
+  font-family: 'NotoSemiBold';
+}
+
+.staff-card li {
+  font-size: 14px;
+}
+
+
+
+/* -------------------- Order Confirmation Page -------------------- */
+.confirmation-title {
+  text-align: center;
+  color: #e51636;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.confirmation-message {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.confirmation-message a{
+  color: #e51636;
+}
+
+.order-summary {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #555;
+}
+
+.order-summary p {
+  margin: 10px 0;
+}
+
+.order-items-title {
+  text-align: center;
+  color: #e51636;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.order-items-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.order-items-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.order-items-table td {
+  padding: 15px;
+  color: #555;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-items-table td:last-child {
+  font-weight: bold;
+  color: #e51636;
+}
+
+
+/* -------------------- Checkout Form -------------------- */
+.checkout-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #555;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'NotoSans', sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus,
+.checkout-form select:focus {
+  border-color: #e51636;
+  outline: none;
+}
+
+.checkout-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.checkout-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #e51636;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'NotoSemiBold', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout-form button:hover {
+  background-color: #c4142e;
+}
+
+
+
+/* -------------------- User Profile Page -------------------- */
+
+.profile-section p{
+  text-align: center;
+  color: #e51636;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+
+.profile-section textarea{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'NotoSans', sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  resize: none;
+  height: 100px;
+}
+
+
+.profile-section textarea:focus{
+  border-color: #e51636;
+  outline: none;
+}
+
+
+
+.profile-section input:focus{
+  border-color: #e51636;
+  outline: none;
+}
+
+
+.profile-section .log-out {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px; 
+}
+
+.profile-section .log-out button {
+  width: auto;
+  padding: 10px 15px;
+  background: none;
+  color: #e51635;
+  border: 2px solid #e51635;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'NotoSemiBold', sans-serif;
+  transition-duration: 0.2s;
+  text-align: center;
+}
+
+.profile-section .log-out button:hover {
+  color: #fff;
+  background-color: #e51635;
+}
+
+
+
+/* -------------------- Order Tracking Page -------------------- */
+.tracking-title {
+  text-align: center;
+  color: #e51636;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.tracking-form {
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.tracking-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.tracking-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.tracking-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e51636;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tracking-form button:hover {
+  background-color: #c4142e;
+}
+
+.order-details {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #555;
+}
+
+.order-details p {
+  margin: 10px 0;
+}
+
