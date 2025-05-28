@@ -6,7 +6,7 @@
     <title>Order Now - Chick-fil-A</title>
     <link rel="icon" href="images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoy5U6rALoZVgR66Wh2AuPKkC9O-NBed0&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=" async defer></script>
 </head>
 
 <body>
